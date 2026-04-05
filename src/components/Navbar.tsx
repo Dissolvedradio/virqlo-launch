@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { ShopifyInstallButton } from "./ShopifyInstallButton";
 
 export const Navbar = () => {
   return (
@@ -7,12 +7,24 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <span className="text-2xl font-bold tracking-tight text-gray-900">Virqlo</span>
+            <span className="text-2xl font-bold tracking-tight text-gray-900">
+              Virqlo
+            </span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-            <a href="#how-it-works" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">How It Works</a>
-            <Button href="https://apps.shopify.com/virqlo">Install on Shopify</Button>
+            <a
+              href="#features"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#how-it-works"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              How It Works
+            </a>
+            <ShopifyInstallButton />
           </div>
         </div>
       </div>
