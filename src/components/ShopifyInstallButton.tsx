@@ -16,18 +16,14 @@ export default function ShopifyInstallButton({
 }: ShopifyInstallButtonProps) {
   const handleClick = () => {
     window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSdoD_5x1drLVa50oeeOTMDTrjSw-1mBHgLLqBSLzCvpIls_Tg/viewform?usp=publish-editor",
+      "https://docs.google.com/forms/d/e/1FAIpQLSdoD_5x1drLVa50oeeOTMDTrjSw-1mBHgLLqBSLzCvpIls_Tg/viewform",
       "_blank",
-      "noopener,noreferrer",
+      "noopener,noreferrer"
     );
   };
 
   return (
-    <div
-      className={`${
-        compact ? "flex items-center" : "flex items-center"
-      } ${className}`}
-    >
+    <div className={`flex items-center ${className}`}>
       <button
         type="button"
         onClick={handleClick}
