@@ -1,35 +1,42 @@
 import React from "react";
 
 export const Hero = () => {
+  const handleEarlyAccessClick = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSdoD_5x1drLVa50oeeOTMDTrjSw-1mBHgLLqBSLzCvpIls_Tg/viewform",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
-    <section className="overflow-hidden bg-white pt-32 pb-20 lg:pt-48 lg:pb-32">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+    <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-600">
               Shopify insert automation for growing brands
             </div>
 
-            <h1 className="mt-6 text-5xl font-bold leading-[1.05] tracking-tight text-gray-900 lg:text-7xl">
+            <h1 className="mt-6 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-[1.05]">
               Turn every order into a{" "}
               <span className="text-[#008060]">repeat customer</span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-xl leading-relaxed text-gray-600">
+            <p className="mt-6 text-xl text-gray-600 leading-relaxed max-w-xl">
               Virqlo helps Shopify stores automatically generate branded thank-you
               cards, discount inserts, and QR-ready packing material for every
               order.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdoD_5x1drLVa50oeeOTMDTrjSw-1mBHgLLqBSLzCvpIls_Tg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+              <button
+                type="button"
+                onClick={handleEarlyAccessClick}
                 className="inline-flex items-center justify-center rounded-xl bg-[#008060] px-8 py-4 text-lg font-semibold text-white shadow-sm transition hover:bg-[#006e52]"
               >
                 Get early access
-              </a>
+              </button>
 
               <div className="text-sm text-gray-500">
                 Limited beta access for early Shopify brands
@@ -123,7 +130,7 @@ export const Hero = () => {
                         </p>
                       </div>
 
-                      <div className="hidden h-24 w-24 items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-white text-[10px] font-medium tracking-[0.2em] text-gray-400 sm:flex">
+                      <div className="hidden sm:flex h-24 w-24 items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-white text-[10px] font-medium tracking-[0.2em] text-gray-400">
                         QR CODE
                       </div>
                     </div>
