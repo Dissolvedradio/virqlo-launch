@@ -1,31 +1,13 @@
-import React from "react";
-import { ShopifyInstallButton } from "./ShopifyInstallButton";
+import ShopifyInstallButton from "./ShopifyInstallButton";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold tracking-tight text-gray-900">
-              Virqlo
-            </span>
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#features"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              How It Works
-            </a>
-            <ShopifyInstallButton />
-          </div>
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b bg-white/95 backdrop-blur">
+      <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="text-xl font-bold text-gray-900">Virqlo</div>
+
+        <div className="hidden lg:block">
+          <ShopifyInstallButton compact />
         </div>
       </div>
     </nav>
